@@ -12,10 +12,11 @@ public class LibraryTest {
     public static void main(String[] args) {
         Library library = new Library(3);
 
-        // 1) Create 2 books: book1 and book2Adding books
-        
-        // 2) add both books to the library by calling abbBook
-
+        // Adding books
+        Book book1 = new Book("Java Basics", "John Doe", BookStatus.AVAILABLE);
+        Book book2 = new Book("Advanced Java", "Jane Smith", BookStatus.CHECKED_OUT);
+        library.addBook(book1);
+        library.addBook(book2);
 
         // Testing checkout
         System.out.println("Book checkout successful: " + book1.checkOut());
